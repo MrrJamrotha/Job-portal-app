@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+#mobile-menu {
+    animation: slide-down 0.3s ease-in-out;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#mobile-menu.show-menu #menu-cancel {
+    display: block;
+}
+
+
+
+.animate-out {
+  animation: fade-out 0.2s ease-out;
+}
+
+.animate-in {
+  animation: fade-in 0.2s ease-in;
+}
+
+@keyframes fade-out {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+#mobile-lang-menu {
+  animation: dropdown 0.3s ease-in-out;
+}
+
+@keyframes dropdown {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.animate-dropdown {
+  animation: dropdown 0.3s ease-in-out;
+}
+
+@keyframes dropdown {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
