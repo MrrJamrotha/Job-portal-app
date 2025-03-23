@@ -1,4 +1,3 @@
-
 <nav class="p-5 bg-gray-200 flex justify-between items-center relative">
     <!-- Logo or Home Button -->
     <div class="flex items-center">
@@ -7,19 +6,24 @@
 
     <!-- Navigation Menu (Hidden on small screens) -->
     <ul class="hidden md:flex flex-wrap justify-center md:justify-start items-center space-x-4">
-        <a href="/" class=" hover:text-black font-medium {{ Route::currentRouteNamed('home') ? 'text-blue-400' : 'text-gray-500' }}">
+        <a href="/"
+            class=" hover:text-black font-medium {{ Route::currentRouteNamed('home') ? 'text-blue-400' : 'text-gray-500' }}">
             <li>Home</li>
         </a>
-        <a href="/find-job" class="font-medium  {{ Route::currentRouteNamed('find-job') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+        <a href="/find-job"
+            class="font-medium  {{ Route::currentRouteNamed('find-job') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
             <li>Find Job</li>
         </a>
-        <a href="/employers" class="font-medium  {{ Route::currentRouteNamed('employers') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+        <a href="/employers"
+            class="font-medium  {{ Route::currentRouteNamed('employers') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
             <li>Employers</li>
         </a>
-        <a href="/candidate" class="font-medium  {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+        <a href="/candidate"
+            class="font-medium  {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
             <li>Candidate</li>
         </a>
-        <a href="/customer-support" class="font-medium {{ Route::currentRouteNamed('customer-support') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+        <a href="/customer-support"
+            class="font-medium {{ Route::currentRouteNamed('customer-support') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
             <li>Customer Support</li>
         </a>
 
@@ -29,7 +33,7 @@
                 🌐 Language
             </button>
             <div id="web-lang-menu" class="hidden absolute right-2 bg-white shadow-md rounded-md w-32 mt-2">
-                <a href="#" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
+                <a href="/" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                         class="px-1">
                         <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff">
@@ -110,9 +114,9 @@
                             d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z">
                         </path>
                     </svg>
-                    English
+                    {{ __('message.english') }}
                 </a>
-                <a href="#" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
+                <a href="/" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                         class="px-1">
                         <path fill="#ce2c2d" d="M1 8H31V24H1z"></path>
@@ -129,7 +133,7 @@
                             d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
                             fill="#fff" opacity=".2"></path>
                     </svg>
-                    Khmer
+                    {{ __('message.khmer') }}
                 </a>
             </div>
         </div>
@@ -148,29 +152,36 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-md">
         <ul class="flex flex-col items-center p-5 space-y-2">
-            <a href="/" class=" hover:text-black font-medium {{ Route::currentRouteNamed('home') ? 'text-blue-400' : 'text-gray-500' }}">
+            <a href="/"
+                class=" hover:text-black font-medium {{ Route::currentRouteNamed('home') ? 'text-blue-400' : 'text-gray-500' }}">
                 <li>Home</li>
             </a>
-            <a href="/find-job" class="font-medium  {{ Route::currentRouteNamed('find-job') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+            <a href="/find-job"
+                class="font-medium  {{ Route::currentRouteNamed('find-job') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
                 <li>Find Job</li>
             </a>
-            <a href="/employers" class="font-medium  {{ Route::currentRouteNamed('employers') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+            <a href="/employers"
+                class="font-medium  {{ Route::currentRouteNamed('employers') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
                 <li>Employers</li>
             </a>
-            <a href="/candidate" class="font-medium {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+            <a href="/candidate"
+                class="font-medium {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
                 <li>Candidate</li>
             </a>
-            <a href="/customer-support" class="font-medium {{ Route::currentRouteNamed('customer-support') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+            <a href="/customer-support"
+                class="font-medium {{ Route::currentRouteNamed('customer-support') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
                 <li>Customer Support</li>
             </a>
 
             <!-- Mobile Language Dropdown -->
             <div class="text-center relative">
-                <button id="mobile-lang-button" class="px-2 text-gray-500 hover:text-black flex justify-center font-medium ">
+                <button id="mobile-lang-button"
+                    class="px-2 text-gray-500 hover:text-black flex justify-center font-medium ">
                     🌐 Language
                 </button>
-                <div id="mobile-lang-menu" class="hidden bg-white shadow-md rounded-md w-32 mx-auto mt-2 animate-dropdown">
-                    <a href="#" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
+                <div id="mobile-lang-menu"
+                    class="hidden bg-white shadow-md rounded-md w-32 mx-auto mt-2 animate-dropdown">
+                    <a href="/" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                             class="px-1">
                             <rect x="1" y="4" width="30" height="24" rx="4" ry="4"
@@ -252,9 +263,9 @@
                                 d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z">
                             </path>
                         </svg>
-                        English
+                        {{ __('message.english') }}
                     </a>
-                    <a href="#" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
+                    <a href="/" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                             class="px-1">
                             <path fill="#ce2c2d" d="M1 8H31V24H1z"></path>
@@ -271,7 +282,7 @@
                                 d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
                                 fill="#fff" opacity=".2"></path>
                         </svg>
-                        Khmer
+                        {{ __('message.khmer') }}
                     </a>
                 </div>
             </div>

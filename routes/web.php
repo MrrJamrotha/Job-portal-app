@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -32,3 +33,14 @@ Route::get('/candidate', function () {
 Route::get('/customer-support', function () {
     return view('customer_support');
 })->name('customer-support');
+
+
+
+Route::get('/greeting/{locale}', function (string $locale) {
+   
+    if (! in_array($locale, ['en', 'km'])) {
+        abort(400);
+    }
+ 
+    App::setLocale($locale);
+});
