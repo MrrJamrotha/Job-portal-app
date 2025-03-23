@@ -38,54 +38,88 @@
             </div>
             <div class="space-y-2 text-sm">
                 <p class="text-base font-bold tracking-wide text-white">Quick Link</p>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">About</p>
+                <a href="/about">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('about') ? 'text-white' : 'text-gray-400' }}">
+                        About</p>
                 </a>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Contact</p>
+                <a href="/contact">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('contact') ? 'text-white' : 'text-gray-400' }}">
+                        Contact</p>
                 </a>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Blog</p>
+                <a href="/blog">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('blog') ? 'text-white' : 'text-gray-400' }}">
+                        Blog</p>
                 </a>
             </div>
 
             <div class="space-y-2 text-sm">
                 <p class="text-base font-bold tracking-wide text-white">Candidate</p>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Browse Jobs</p>
+                <a href="/jobs">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('jobs') ? 'text-white' : 'text-gray-400' }}">
+                        Browse Jobs</p>
                 </a>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Browse Employers</p>
+                <a href="/employers">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('employers') ? 'text-white' : 'text-gray-400' }}">
+                        Browse Employers</p>
                 </a>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Candidate Dashboard</p>
+                <a href="/candidate-dashboard">
+                    <p
+                        class="mr-1 py-1 font-medium hover:text-white {{ Route::currentRouteNamed('candidate-dashboard') ? 'text-white' : 'text-gray-400' }}">
+                        Candidate Dashboard</p>
                 </a>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Save Jobs</p>
+                <a href="/save-jobs">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('save-jobs') ? 'text-white' : 'text-gray-400' }}">
+                        Save Jobs</p>
                 </a>
             </div>
 
             <div class="space-y-2 text-sm">
                 <p class="text-base font-bold tracking-wide text-white">Employers</p>
-                <a href="">
-                    <p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Post a Job</p>
+                <a href="/post-job">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('post-job') ? 'text-white' : 'text-gray-400' }}">
+                        Post a Job</p>
                 </a>
-                <a href="">
-                    <p class="mr-1  py-1 text-gray-400 font-medium hover:text-white">Browse Candidates</p>
+                <a href="/candidates">
+                    <p
+                        class="mr-1  py-1  font-medium hover:text-white {{ Route::currentRouteNamed('candidates') ? 'text-white' : 'text-gray-400' }}">
+                        Browse Candidates</p>
                 </a>
-                <a href="">
-                    <p class="mr-1  py-1 text-gray-400 font-medium hover:text-white">Employers Dashboard</p>
+                <a href="/employers-dashboard">
+                    <p
+                        class="mr-1  py-1  font-medium hover:text-white {{ Route::currentRouteNamed('employers-dashboard') ? 'text-white' : 'text-gray-400' }}">
+                        Employers Dashboard</p>
                 </a>
-                <a href="">
-                    <p class="mr-1  py-1 text-gray-400 font-medium hover:text-white">Applications</p>
+                <a href="/applications">
+                    <p
+                        class="mr-1  py-1  font-medium hover:text-white {{ Route::currentRouteNamed('applications') ? 'text-white' : 'text-gray-400' }}">
+                        Applications</p>
                 </a>
             </div>
 
             <div class="space-y-2 text-sm">
                 <p class="text-base font-bold tracking-wide text-white">Support</p>
-                <a href=""><p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Faqs</p></a>
-                <a href=""><p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Privacy Policy</p></a>
-                <a href=""><p class="mr-1 py-1 text-gray-400 font-medium hover:text-white">Terms & Conditions</p></a>
+                <a href="/faqs">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('faqs') ? 'text-white' : 'text-gray-400' }}">
+                        Faqs</p>
+                </a>
+                <a href="/privacy-policy">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('privacy-policy') ? 'text-white' : 'text-gray-400' }}">
+                        Privacy Policy</p>
+                </a>
+                <a href="/terms-conditions">
+                    <p
+                        class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('terms-conditions') ? 'text-white' : 'text-gray-400' }}">
+                        Terms & Conditions</p>
+                </a>
             </div>
 
         </div>

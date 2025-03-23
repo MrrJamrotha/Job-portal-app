@@ -2,7 +2,7 @@
 <nav class="p-5 bg-gray-200 flex justify-between items-center relative">
     <!-- Logo or Home Button -->
     <div class="flex items-center">
-        <a href="#" class="text-xl font-bold text-gray-800">Job Portal</a>
+        <a href="/" class="text-xl font-bold text-gray-800">Job Portal</a>
     </div>
 
     <!-- Navigation Menu (Hidden on small screens) -->
