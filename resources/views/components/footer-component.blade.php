@@ -28,7 +28,7 @@
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     <p class="text-sm text-white font-medium">
-                        Call now : +1 (555) 123-4567
+                        {{ __('message.call_now') }} : +1 (555) 123-4567
                     </p>
                     <p class="mt-4 text-sm text-white">
                         Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
@@ -37,88 +37,88 @@
                 </div>
             </div>
             <div class="space-y-2 text-sm">
-                <p class="text-base font-bold tracking-wide text-white">Quick Link</p>
+                <p class="text-base font-bold tracking-wide text-white">{{ __('message.quick_link') }}</p>
                 <a href="/about">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('about') ? 'text-white' : 'text-gray-400' }}">
-                        About</p>
+                        {{ __('message.about') }}</p>
                 </a>
                 <a href="/contact">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('contact') ? 'text-white' : 'text-gray-400' }}">
-                        Contact</p>
+                        {{ __('message.contact') }}</p>
                 </a>
                 <a href="/blog">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('blog') ? 'text-white' : 'text-gray-400' }}">
-                        Blog</p>
+                        {{ __('message.blog') }}</p>
                 </a>
             </div>
 
             <div class="space-y-2 text-sm">
-                <p class="text-base font-bold tracking-wide text-white">Candidate</p>
+                <p class="text-base font-bold tracking-wide text-white">{{ __('message.candidate') }}</p>
                 <a href="/jobs">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('jobs') ? 'text-white' : 'text-gray-400' }}">
-                        Browse Jobs</p>
+                        {{ __('message.browse_jobs') }}</p>
                 </a>
                 <a href="/employers">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('employers') ? 'text-white' : 'text-gray-400' }}">
-                        Browse Employers</p>
+                        {{ __('message.browse_employers') }}</p>
                 </a>
                 <a href="/candidate-dashboard">
                     <p
                         class="mr-1 py-1 font-medium hover:text-white {{ Route::currentRouteNamed('candidate-dashboard') ? 'text-white' : 'text-gray-400' }}">
-                        Candidate Dashboard</p>
+                        {{ __('message.candidate_dashboard') }}</p>
                 </a>
                 <a href="/save-jobs">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('save-jobs') ? 'text-white' : 'text-gray-400' }}">
-                        Save Jobs</p>
+                        {{ __('message.save_jobs') }}</p>
                 </a>
             </div>
 
             <div class="space-y-2 text-sm">
-                <p class="text-base font-bold tracking-wide text-white">Employers</p>
+                <p class="text-base font-bold tracking-wide text-white">{{ __('message.employers') }}</p>
                 <a href="/post-job">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('post-job') ? 'text-white' : 'text-gray-400' }}">
-                        Post a Job</p>
+                        {{ __('message.post_jobs') }}</p>
                 </a>
                 <a href="/candidates">
                     <p
                         class="mr-1  py-1  font-medium hover:text-white {{ Route::currentRouteNamed('candidates') ? 'text-white' : 'text-gray-400' }}">
-                        Browse Candidates</p>
+                        {{ __('message.browse_candidates') }}</p>
                 </a>
                 <a href="/employers-dashboard">
                     <p
                         class="mr-1  py-1  font-medium hover:text-white {{ Route::currentRouteNamed('employers-dashboard') ? 'text-white' : 'text-gray-400' }}">
-                        Employers Dashboard</p>
+                        {{ __('message.employers_dashboard') }}</p>
                 </a>
                 <a href="/applications">
                     <p
                         class="mr-1  py-1  font-medium hover:text-white {{ Route::currentRouteNamed('applications') ? 'text-white' : 'text-gray-400' }}">
-                        Applications</p>
+                        {{ __('message.applications') }}</p>
                 </a>
             </div>
 
             <div class="space-y-2 text-sm">
-                <p class="text-base font-bold tracking-wide text-white">Support</p>
+                <p class="text-base font-bold tracking-wide text-white">{{ __('message.support') }}</p>
                 <a href="/faqs">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('faqs') ? 'text-white' : 'text-gray-400' }}">
-                        Faqs</p>
+                        {{ __('message.faqs') }}</p>
                 </a>
                 <a href="/privacy-policy">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('privacy-policy') ? 'text-white' : 'text-gray-400' }}">
-                        Privacy Policy</p>
+                        {{ __('message.privacy_policy') }}</p>
                 </a>
                 <a href="/terms-conditions">
                     <p
                         class="mr-1 py-1  font-medium hover:text-white {{ Route::currentRouteNamed('terms-conditions') ? 'text-white' : 'text-gray-400' }}">
-                        Terms & Conditions</p>
+                        {{ __('message.terms_conditions') }}</p>
                 </a>
             </div>
 

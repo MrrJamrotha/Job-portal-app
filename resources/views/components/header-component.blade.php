@@ -8,29 +8,29 @@
     <ul class="hidden md:flex flex-wrap justify-center md:justify-start items-center space-x-4">
         <a href="/"
             class=" hover:text-black font-medium {{ Route::currentRouteNamed('home') ? 'text-blue-400' : 'text-gray-500' }}">
-            <li>Home</li>
+            <li>{{ __('message.home') }}</li>
         </a>
         <a href="/find-job"
             class="font-medium  {{ Route::currentRouteNamed('find-job') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-            <li>Find Job</li>
+            <li>{{ __('message.find_job') }}</li>
         </a>
         <a href="/employers"
             class="font-medium  {{ Route::currentRouteNamed('employers') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-            <li>Employers</li>
+            <li>{{ __('message.employers') }}</li>
         </a>
         <a href="/candidate"
             class="font-medium  {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-            <li>Candidate</li>
+            <li>{{ __('message.candidate') }}</li>
         </a>
         <a href="/customer-support"
             class="font-medium {{ Route::currentRouteNamed('customer-support') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-            <li>Customer Support</li>
+            <li>{{ __('message.customer_support') }}</li>
         </a>
 
         <!-- Language Dropdown (Click to Open) -->
         <div class="relative">
             <button id="web-lang-button" class="px-2 text-gray-500 hover:text-black flex items-center font-medium ">
-                🌐 Language
+                🌐 {{ __('message.language') }}
             </button>
             <div id="web-lang-menu" class="hidden absolute right-2 bg-white shadow-md rounded-md w-32 mt-2">
                 <a href="/" class="  px-4 py-2 text-gray-500 hover:bg-gray-200 flex items-center">
@@ -154,30 +154,30 @@
         <ul class="flex flex-col items-center p-5 space-y-2">
             <a href="/"
                 class=" hover:text-black font-medium {{ Route::currentRouteNamed('home') ? 'text-blue-400' : 'text-gray-500' }}">
-                <li>Home</li>
+                <li>{{ __('message.home') }}</li>
             </a>
             <a href="/find-job"
                 class="font-medium  {{ Route::currentRouteNamed('find-job') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-                <li>Find Job</li>
+                <li>{{ __('message.find_job') }}</li>
             </a>
             <a href="/employers"
                 class="font-medium  {{ Route::currentRouteNamed('employers') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-                <li>Employers</li>
+                <li>{{ __('message.employers') }}</li>
             </a>
             <a href="/candidate"
-                class="font-medium {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-                <li>Candidate</li>
+                class="font-medium  {{ Route::currentRouteNamed('candidate') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
+                <li>{{ __('message.candidate') }}</li>
             </a>
             <a href="/customer-support"
                 class="font-medium {{ Route::currentRouteNamed('customer-support') ? 'text-blue-400' : 'text-gray-500' }} hover:text-black">
-                <li>Customer Support</li>
+                <li>{{ __('message.customer_support') }}</li>
             </a>
 
             <!-- Mobile Language Dropdown -->
             <div class="text-center relative">
                 <button id="mobile-lang-button"
                     class="px-2 text-gray-500 hover:text-black flex justify-center font-medium ">
-                    🌐 Language
+                    🌐 {{ __('message.language') }}
                 </button>
                 <div id="mobile-lang-menu"
                     class="hidden bg-white shadow-md rounded-md w-32 mx-auto mt-2 animate-dropdown">
